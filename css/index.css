@@ -119,3 +119,10 @@ li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.images {
+    color: #4487f6;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-left: 215px;
+}
