@@ -1,0 +1,121 @@
+:root {
+    --color-fondo: #202124;
+    --color-primario: #353535;
+    --color-secundario: #FFFFFF40;
+    --color-oscuro: #171717;
+}
+
+* {
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 6vh;
+}
+
+header a {
+    margin-inline: 1rem;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84vh;
+}
+
+input {
+    margin-block: 2rem;
+    width: 28vw;
+    height: 5vh;
+    border: solid 1px var(--color-secundario);
+    border-radius: 2rem;
+    padding: 0 2rem;
+    font-size: medium;
+    box-shadow: 0px 0px 1px black;
+}
+
+input:hover,
+input:focus {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    outline: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+section div {
+    display: flex;
+}
+
+div a {
+    font-size: medium;
+    margin-inline: 1rem;
+    text-decoration: none;
+    background-color: var(--color-primario);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: solid 0.5px transparent;
+}
+
+div a:hover {
+    border-color: var(--color-secundario);
+}
+
+p { 
+    margin-block: 2rem;
+    font-size: smaller;
+}
+ 
+p span {
+    color: #2d80c0;
+}
+
+p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    height: 10vh;
+}
+
+footer div { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    font-size: medium;
+    background-color: var(--color-oscuro);
+    border-top: solid 0.5px var(--color-fondo);
+    border-color: var(--color-fondo);
+    box-sizing: border-box;
+}
+
+ul {
+    background-color: inherit;
+}
+
+li {
+    display: inline;
+    margin-inline: 1rem;
+    background-color: inherit;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
