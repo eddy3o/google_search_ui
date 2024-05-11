@@ -1,0 +1,97 @@
+@import url(styles.css);
+
+main {
+    box-sizing: border-box;
+    height: 84vh;
+}
+
+h2 {
+    color: #f28b82;
+    padding: 25px 35px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 2px solid var(--color-oscuro);
+}
+
+form {
+    padding: 25px 35px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    display: flex;
+    margin: 0.3rem 0.2rem;
+    height: 2rem;
+    align-items: center;
+}
+
+label, p {
+    font-size: smaller;
+    color: #969ba1;
+}
+
+span,
+label {
+    width: 15%;
+}
+
+p {
+    width: auto;
+}
+
+input {
+    width: 30%;
+    height: 1.5rem;
+    border: solid 1px var(--color-secundario);
+    margin: 0 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #8ab4f8;
+    outline: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding-inline: 1rem;
+    height: 2rem;
+    background-color: #8ab4f8;
+    color: var(--color-fondo);
+    margin-top: 1rem;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #c3d5f1;
+}
+
+@media (max-width: 1100px) {
+    p {
+        display: none;
+    }
+    label {
+        width: 30%;
+    }
+
+    input {
+        width: 70%;
+    }
+    span {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-left: auto;
+    }
+}
